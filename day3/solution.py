@@ -50,6 +50,7 @@ def search(grid: list[list[str]]) -> int:
         i += 1
     return total
 
+# incomplete, i misintrepreted the example in the problem.
 def part2(input: str) -> int:
     lines = input.splitlines()
     grid = []
@@ -90,7 +91,7 @@ def search_gears(grid: list[list[str]]) -> int:
                                 break
                         # right -= 1
                         sublist = grid[new_x][new_y+left:new_y+right]
-                        number_string = ''.join(sublist)  # Joining the sublist elements to form a string
+                        number_string = ''.join(sublist) 
                         number = int(number_string)
                         # print(number)
                         results.add(number)
